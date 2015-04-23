@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact - Ray Stroud</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta property="og:title" content="Ray Stroud" /> 
+	<meta property="og:site_name" content="Ray Stroud" />
+	<meta property="og:url" content="http://raystroud.ca" />
+	<meta property="og:description" content="web developer, back-end" />
+	<meta property="og:image" content="http://raystroud.ca/images/raystroud.png?v2" />
+</head>
+<body>
+	<div id="header" class="clickable">
+		<div class="name">Ray Stroud</div>
+		<div class="description">Web Developer, Back-end</div>
+		<a href="."><span class="link-spanner"></span></a>
+	</div>
+	<div id="content">
+		<div id="contact">
+			<h2>Contact by Email</h2>
+			<form name="contact" action="mail.php" onsubmit="return validate();" method="post">
+				<h4>Name</h4>
+				<input type="text" name="name" class="box box-input" placeholder="Your name" />
+
+				<h4>Email</h4>
+				<input type="email" name="email" class="box box-input" placeholder="Your email" />
+				
+				<h4>Message</h4>
+				<textarea name="message" rows="5" class="box box-input" placeholder="Your message"></textarea>
+
+				<button type="submit" name="sendMessage" class="clickable box box-button"><a><span class="fa fa-envelope-o dl-icon"></span>Send Email</a></button>
+			</form>
+
+			<h2>Social Media</h2>
+			<div class="grid-2">
+				<div class="clickable box">
+					<h3><span class="fa fa-facebook-square dl-icon"></span>Facebook </h3>
+					<a href="http://fb.me/raystroud.ca" target="_blank"><span class="link-spanner"></span></a>
+				</div>
+				<div class="clickable box">
+					<h3><span class="fa fa-linkedin-square dl-icon"></span>LinkedIn </h3>
+					<a href="http://linkedin.com/in/raystroud" target="_blank"><span class="link-spanner"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<a href="#">
+			<span class="fa fa-fw fa-2x fa-arrow-circle-up"></span>
+		</a>
+		<a href=".">
+			<span class="fa fa-fw fa-2x fa-home"></span>
+		</a>
+		<a href="contact.htm">
+			<span class="fa fa-fw fa-2x fa-envelope"></span>
+		</a>
+		<a href="http://linkedin.com/in/raystroud" target="_blank">
+			<span class="fa fa-fw fa-2x fa-linkedin-square"></span>
+		</a>
+		<a href="http://fb.me/raystroud.ca" target="_blank">
+			<span class="fa fa-fw fa-2x fa-facebook-square"></span>
+		</a>
+	</div>
+	<script>
+		function validate() {
+			var name = document.forms["contact"]["name"].value;
+			var email = document.forms["contact"]["email"].value;
+			var message = document.forms["contact"]["message"].value;
+
+			var bConfirm = false;
+			var confirmMessage = "";
+			if (!name)
+			{
+				bConfirm = true;
+				confirmMessage += "Without a name, I may not know who you are.\n";
+			}
+			if (!email)
+			{
+				bConfirm = true;
+				confirmMessage += "Without an email, I may not be able to respond.\n";
+			}
+			if (!message)
+			{
+				bConfirm = true;
+				confirmMessage += "Without a message, I may not know why you contacted me.\n";
+			}
+
+			if(bConfirm)
+			{
+				var bSend = confirm(confirmMessage + "Send message anyway?");
+				if(bSend) {return true;} else {return false;}
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+/* ############################################
+	CLEANUP
+############################################ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, code, img, small, strike, var, b, u, i, center, ol, ul, li, fieldset, form, input, textarea, label, legend, table, tbody, tfoot, thead, tr, th, td, footer, header, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ############################################
+	LAYOUT
+############################################ */
+body {
+  background-color: #DB6F00;
+  font-family: Arial, Helvetica, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #006B8E; }
+
+a:hover {
+  text-decoration: underline; }
+
+h2 {
+  display: block;
+  color: #DB6F00;
+  font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 2% 0; }
+
+h3 {
+  display: block;
+  font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em 0; }
+
+h4 {
+  display: block;
+  font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0 0 0.8em; }
+
+p, ul {
+  display: block;
+  margin: 1em 0; }
+
+abbr[title] {
+  color: #DB6F00;
+  border-bottom: 1px dotted #DB6F00;
+  cursor: help; }
+
+input, textarea, button {
+  font: inherit; }
+
+button {
+  display: block; }
+
+#content {
+  background-color: #EAEAEA;
+  line-height: 22px;
+  padding: 0 3%;
+  overflow: hidden; }
+
+.wrapper {
+  max-width: 1300px;
+  margin: 2% auto; }
+
+.box {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0.5em 1em;
+  margin: 1% 0; }
+
+.clickable {
+  position: relative; }
+
+.clickable.box:hover {
+  border-color: #006B8E; }
+  .clickable.box:hover h3 {
+    color: #006B8E;
+    text-decoration: underline; }
+  .clickable.box:hover a {
+    text-decoration: underline; }
+
+.link-spanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.dl-icon {
+  margin-right: 0.5em; }
+
+.confirm {
+  background-color: #e6ffe6;
+  border-color: green; }
+
+.error {
+  background-color: #ffe5e5;
+  border-color: red; }
+
+@media screen and (max-width: 700px) {
+  h2 {
+    margin: 1em 0 0.5em; }
+
+  .wrapper {
+    margin-bottom: 1em; }
+
+  .box {
+    margin: 0.5em 0; } }
+/* ############################################
+	HEADER
+############################################ */
+#header {
+  color: white;
+  padding: 3% 1% 2% 5%; }
+  #header .name {
+    font-family: Georgia, serif;
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps; }
+  #header .description {
+    font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+    font-size: 1em;
+    text-transform: lowercase;
+    padding-left: 1.5em; }
+
+#header:hover .name {
+  text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.7); }
+
+/* ############################################
+	FOOTER
+############################################ */
+#footer {
+  color: white;
+  padding: 0.8em;
+  padding-left: 5%; }
+  #footer p {
+    padding: 0;
+    margin: 0; }
+  #footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: white; }
+  #footer .fa:hover {
+    text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.7); }
+
+@media screen and (max-width: 700px) {
+  #footer {
+    text-align: center;
+    padding-left: 0.8em; } }
+/* ############################################
+	ABOUT
+############################################ */
+#about {
+  overflow: hidden; }
+  #about img {
+    margin: 1em 0 1em 9%;
+    float: right;
+    width: 300px;
+    max-width: 100%; }
+
+@media screen and (max-width: 700px) {
+  #about img {
+    margin-left: 1%; } }
+/* ############################################
+	PROJECTS
+############################################ */
+#projects .box {
+  overflow: hidden; }
+#projects img {
+  float: right;
+  max-width: 60%;
+  margin: 0 0 0.8em 0.8em; }
+
+/* ############################################
+	EXPERIENCE
+############################################ */
+#experience {
+  line-height: 1; }
+  #experience li {
+    margin-bottom: 0.5em; }
+
+/* ############################################
+	PHILOSOPHY
+############################################ */
+#philosophy {
+  line-height: 24px; }
+  #philosophy img {
+    width: 100px;
+    height: 100px; }
+  #philosophy .box {
+    overflow: hidden; }
+  #philosophy .icon {
+    float: right;
+    margin: 0.8em 0 0.8em 0.8em; }
+  #philosophy .keyword {
+    display: inline-block;
+    background-color: #36A4C4;
+    color: white;
+    font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+    font-weight: bold;
+    padding: 0 8px;
+    line-height: 20px; }
+
+@media screen and (max-width: 700px) {
+  #philosophy img {
+    width: 80px;
+    height: 80px; } }
+/* ############################################
+	DSTS
+############################################ */
+#dsts .box {
+  padding: 10px 1em; }
+#dsts p.center {
+  text-align: center; }
+#dsts img {
+  display: inline-block;
+  max-width: 514px;
+  margin: 10px 0; }
+
+@media screen and (max-width: 600px) {
+  #dsts img {
+    max-width: 100%; } }
+/* ############################################
+	DATABASE
+############################################ */
+#database img {
+  display: inline-block;
+  max-width: 49%;
+  margin: 0; }
+
+@media screen and (max-width: 900px) {
+  #database img {
+    max-width: 100%;
+    margin: 10px 0; } }
+/* ############################################
+	EDUCATION
+############################################ */
+#education h3 {
+  margin-top: 0;
+  padding-top: 0; }
+#education .code {
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+  font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+  font-weight: normal; }
+#education .location {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+  font-style: italic;
+  color: #AAAAAA; }
+
+#high ul {
+  list-style-position: inside;
+  list-style-type: circle;
+  margin: 0.8em 0; }
+#high .grid-item {
+  margin: 0 1%; }
+
+/* ############################################
+	CONTACT
+############################################ */
+#contact {
+  max-width: 650px;
+  margin: 2% 0; }
+  #contact .box-button {
+    width: 90%;
+    margin: 0.5em 5%;
+    text-align: center; }
+  #contact .box-input {
+    width: 100%;
+    margin-bottom: 0; }
+
+/* ############################################
+	ERROR
+############################################ */
+#error {
+  max-width: 650px;
+  margin: 2% 0; }
+  #error .box-button {
+    width: 90%;
+    margin: 0.5em 5%;
+    text-align: center; }
+
+/* ############################################
+	GRIDS
+############################################ */
+.grid-1, .grid-2, .grid-3, .grid-4 {
+  margin: -1%;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap; }
+  .grid-1 .box, .grid-2 .box, .grid-3 .box, .grid-4 .box {
+    margin: 1%; }
+
+.grid-item {
+  margin: 1%; }
+
+.grid-1 .box, .grid-1 .grid-item {
+  width: 98%; }
+
+.grid-2 .box, .grid-2 .grid-item {
+  width: 48%; }
+
+.grid-3 .box, .grid-3 .grid-item {
+  width: 31.3%; }
+
+.grid-4 .box, .grid-4 .grid-item {
+  width: 23%; }
+
+@media screen and (max-width: 700px) {
+  .grid-1, .grid-2, .grid-3, .grid-4 {
+    margin: -0.5em -1%; }
+    .grid-1 .box, .grid-2 .box, .grid-3 .box, .grid-4 .box {
+      width: 98%;
+      margin: 0.5em 1%; }
+    .grid-1 .grid-item, .grid-2 .grid-item, .grid-3 .grid-item, .grid-4 .grid-item {
+      width: 98%;
+      margin: 0.5em 1%; }
+
+  .grid-item {
+    margin: 0.5em 1%; } }
+
+/*# sourceMappingURL=style.css.map */

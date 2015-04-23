@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSTS - Ray Stroud</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta property="og:title" content="Ray Stroud" /> 
+	<meta property="og:site_name" content="Ray Stroud" />
+	<meta property="og:url" content="http://raystroud.ca" />
+	<meta property="og:description" content="web developer, back-end" />
+	<meta property="og:image" content="http://raystroud.ca/images/raystroud.png?v2" />
+</head>
+<body>
+	<div id="header" class="clickable">
+		<div class="name">Ray Stroud</div>
+		<div class="description">Web Developer, Back-end</div>
+		<a href="."><span class="link-spanner"></span></a>
+	</div>
+	<div id="content">
+		<div class="wrapper">
+
+			<h2>DSTS</h2>
+			<div id="dsts">
+				<div class="clickable box">
+					<p><a>Visit the site to see it in action <span class="glyphicon glyphicon-new-window"></span></a>. Use both username and password "manager1". Try looking for student "Smith", and check out the Maintenance tab for the flashy tables.</p>
+					<p class="center"><img alt="" src="images/dsts.png">
+					<a href="http://75.158.32.111:8020/" target="_blank"><span class="link-spanner"></span></a></p>
+				</div>
+			</div>
+
+			<h2>Purpose</h2>
+			<div id="purpose">
+				<div class="box">
+					<p>Students at the Northern Alberta Institute of Technology (NAIT) can register for classes in the <a href="http://www.nait.ca/program_home_78110.htm" target="_blank">Digital Media and IT (DMIT) program <span class="glyphicon glyphicon-new-window"></span></a>. It is flexible because it allows students to customize their course selection within various areas of study in the digital media and IT industries. The DMIT administrative staff have to track all students' progress manually, despite having no control over which courses the students select. To complicate the situation, the DMIT program went through a massive change that required a new set of courses and rules, but it had to continue supporting the old courses and rules. </p>
+					<p>The purpose of the DMIT Student Tracking System (DSTS) application is to track students by displaying student information and flagging any issues that students may have with either course selection or graduation. </p>
+				</div>
+			</div>
+
+			<h2>Input</h2>
+			<div id="input">
+				<div class="box">
+					<p>The student information is entered into the system by uploading .PDF and .CSV reports generated from the registration system. This was the largest portion of the project, or the portion that required the most intensive coding. While the two .CSV files were fairly straightforward, the .PDF file was very complicated to import. Not only is it harder to extract clean data from a .PDF format, but the file itself contained more complicated student data.</p>
+				</div>
+			</div>
+	<!--
+			<div id="output">
+				<h2>Output</h2>
+				<div class="box">
+					<p></p>
+				</div>
+			</div>
+	-->
+
+			<h2>Contributions</h2>
+			<div id="contributions" class="grid-3">
+				<div class="box">
+					<h3>Use Cases</h3>
+					<p>Each member coded at least one use case from database to screen: SQL stored procedures, C# data access classes, C# business logic classes, C# behavior code-behind, ASP presentation code. I was responsible for coding: the course prerequisites that are updated in the Maintenance screen, the Subplan Requirements tab on the Student screen, the Grad List screen, the credit totals on the Student and Grad List screens, and some of the issues on the Issue screen.</p>
+				</div>
+				<div class="box">
+					<h3>Database</h3>
+					<p>During inception phase, the group split into two groups to develop the data structures and the user interface/experience. My group analysed the client information to plan the database tables and classes required for the system. See the finished ERD below.</p>
+				</div>
+				<div class="box">
+					<h3>Team Leader</h3>
+					<p>Leadership responsibilities include: being familiar with the whole system, setting up and maintaining the list of each member's tasks and responsibilities, checking up with each member's progress, assisting with any tasks, reassigning tasks to ease workloads.</p>
+				</div>
+				<div class="box">
+					<h3>Documentation</h3>
+					<p>Each member took on a management role for a particular section of the project: Database, Library, Screens, Security, Reports, Testing, Documentation, Repository. I was in charge of documentation, which involved setting up the template for every document and its sections, assigning team members to each section, verifying that each section was completed, and proofreading and editing each section.</p>
+				</div>
+				<div class="box">
+					<h3>Editor</h3>
+					<p>Initially, we did a group-review of the documents sent to clients. After barely making deadlines, we decided to have one person review the documents instead. I proofread each section for content, spelling, grammar, and sentence structure improvements. Afterwards, each member read it and sent me their revision suggestions to be incorporated for the final version.</p>
+				</div>
+				<div class="box">
+					<h3>Presentation</h3>
+					<p>In April, an expo is held at NAIT where industry professionals are invited to view the capstone groups' final projects. For our presentation, I led a walkthrough of the Maintenance screen, talked about how to maintain the necessary course data, concluded the presentation, and fielded the questions from attendees.</p>
+				</div>
+			</div>
+
+			<h2>Database</h2>
+			<div id="database" class="grid-1">
+				<div class="box">
+					<p>Initially, we did not have access to the student data files, so we modeled our database using the clients' initial specifications and our own familiarity with the current system. Once we received the files, we had to modify the model significantly. As the development on the data import progressed, the database model was adjusted numerous times to account for all the intricacies that the files introduced.</p>
+				</div>
+				<div id="erd" class="clickable box">
+					<h3>ERD</h3>
+					<p>
+						<img alt="" src="images/erd_left.png">
+						<img alt="" src="images/erd_right.png">
+						<p><a>Click to view full-sized image <span class="glyphicon glyphicon-new-window"></span></a>.
+						<a href="images/erd.png" target="_blank"><span class="link-spanner"></span></a>
+					</p>
+				</div>
+			</div>
+
+			<h2>Tools</h2>
+			<div id="tools" class="grid-3">
+				<div class="box">
+					<h3>Google Spreadsheets</h3>
+					<p>We tried several different ways to keep track of progress: Email, MS Project Gantt chart, Google Spreadsheet, Trello card system. In the end, we used the Google Spreadsheet because everyone could view and edit the progress sheet quickly and simultaneously. It also offered simpler visual customization than the Gantt chart or card system.</p>
+				</div>
+				<div class="box">
+					<h3>GitHub</h3>
+					<p>Since we were learning to use GitHub, we assigned one person as the Repo-Master with access to the main repository, and everyone else had to fork the main repo and use pull-requests to add their code. It was quite the learning curve. Thankfully, by the end of the project, we were merging near-flawlessly, and merge conflicts were handled with ease using kdiff3 merge tools. </p>
+				</div>
+				<div class="box">
+					<h3>DataTables</h3>
+					<p>Instead of using ASP's tools to manually code table functions for paging, sorting, and searching, we used a jQuery plugin called DataTables. It takes the whole set of data and processes it in the front end. It means less calls to the database and a more natural look and feel for the user.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer">
+		<a href="#">
+			<span class="fa fa-fw fa-2x fa-arrow-circle-up"></span>
+		</a>
+		<a href=".">
+			<span class="fa fa-fw fa-2x fa-home"></span>
+		</a>
+		<a href="contact.htm">
+			<span class="fa fa-fw fa-2x fa-envelope"></span>
+		</a>
+		<a href="http://linkedin.com/in/raystroud" target="_blank">
+			<span class="fa fa-fw fa-2x fa-linkedin-square"></span>
+		</a>
+		<a href="http://fb.me/raystroud.ca" target="_blank">
+			<span class="fa fa-fw fa-2x fa-facebook-square"></span>
+		</a>
+	</div>
+</body>
+</html>

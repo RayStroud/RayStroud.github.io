@@ -1,0 +1,431 @@
+$offwhite: #F1F1F1;
+$lightgrey: #EAEAEA;
+$grey: #D3D3D3;
+$darkgrey: #AAAAAA;
+
+$lightgrey-simple: #EEE;
+$grey-simple: #DDD;
+$darkgrey-simple: #AAA;
+$orange-simple: #C50;
+$blue-simple: #07C;
+
+//orange
+$orange: #DB6F00;
+$orange-grey: #A46729;
+$orange-dark: #8E4800;
+$orange-light: #ED953B;
+$orange-pale: #EDAC6B;
+
+//blue
+$blue: #056B88;
+$blue-grey: #1C5666;
+$blue-dark: #014559;
+$blue-light: #36A4C4;
+$blue-pale: #5CADC4;
+
+//complimentary
+$blue-comp: #00A5DB;
+$blue-darkcomp: #006B8E;
+$orange-darkcomp: #8E4800;
+$orange-lightcomp: #FF8E19;
+
+
+//site colors
+$bgcolor: $orange;
+$header-color: white;
+$content-bgcolor: $lightgrey;
+$heading-color: $orange;
+$highlight-color: $blue-light;
+$hover-color: $blue-darkcomp;
+$link-color: $blue-darkcomp;
+$box-bgcolor: white;
+$box-border-color: lightgray;
+$faded-color: $darkgrey;
+$abbr-color: $orange;
+
+//fonts
+$heading-font: "Trebuchet MS", Helvetica, sans-serif;
+$content-font: Arial, Helvetica, sans-serif;
+$serif-font: Georgia, serif;
+$mono-font: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
+
+//effects
+$shadow: 2px 4px 3px rgba(0,0,0,0.3);
+$glow: 0px 0px 8px rgba(255,255,255,0.7);
+$glow-big: 0px 0px 16px rgba(255,255,255,0.7);
+
+/* ############################################
+	CLEANUP
+############################################ */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, code, img, small, strike, var, b, u, i, center, ol, ul, li, fieldset, form, input, textarea, label, legend, table, tbody, tfoot, thead, tr, th, td, footer, header, hgroup {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* ############################################
+	LAYOUT
+############################################ */
+body {
+	background-color: $bgcolor;
+	font-family: $content-font;
+}
+a {
+	text-decoration: none;
+	color: $link-color;
+}
+a:hover { text-decoration: underline;}
+h2 {
+	display: block;
+	color: $heading-color;
+	font-family: $mono-font;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 2% 0;
+}
+h3 {
+	display: block;
+	font-family: $mono-font;
+	font-size: 1em;
+	font-weight: bold; 
+	margin: 1em 0;
+}
+h4 {
+	display: block;
+	font-family: $mono-font;
+	font-size: 1.2em;
+	font-weight: bold; 
+	margin: 1em 0 0 0.8em;
+}
+p, ul {
+	display: block;
+	margin: 1em 0;
+}
+abbr[title] {
+	color: $abbr-color;
+	border-bottom: 1px dotted $abbr-color;
+	cursor: help;
+}
+input, textarea, button { font: inherit;}
+button {display: block;}
+#content {
+	background-color: $content-bgcolor;
+	line-height: 22px;
+	padding: 0 3%;
+	overflow: hidden;
+}
+.wrapper {
+	max-width: 1300px;
+	margin: 2% auto;
+}
+.box {
+	background-color: $box-bgcolor;
+	border: 1px solid $box-border-color;
+	padding: 0.5em 1em;
+	margin: 1% 0;
+}
+.clickable { position: relative;}
+.clickable.box:hover {
+	border-color: $blue-darkcomp;
+	h3 { 
+		color: $hover-color;
+		text-decoration: underline;
+	}
+	a {text-decoration: underline;}
+}
+.link-spanner {
+	position: absolute; 
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.dl-icon {margin-right: 0.5em;}
+.confirm { 
+	background-color: lighten(green, 70%);
+	border-color: green;
+}
+.error { 
+	background-color: lighten(#F00, 45%);
+	border-color: red;
+}
+
+@media screen and (max-width: 700px) {
+	h2 {margin: 1em 0 0.5em;}
+	.wrapper {margin-bottom: 1em;}
+	.box {margin: 0.5em 0;}
+}
+
+/* ############################################
+	HEADER
+############################################ */
+#header {
+	color: $header-color;
+	padding: 3% 1% 2% 5%;
+	.name {
+		font-family: $serif-font;
+		font-size: 3em;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+	.description {
+		font-family: $mono-font;
+		font-size: 1em;
+		text-transform: lowercase;
+		padding-left: 1.5em;
+	}
+}
+#header:hover {
+	.name {text-shadow: $glow-big;}
+}
+
+/* ############################################
+	FOOTER
+############################################ */
+#footer {
+	color: $header-color;
+	padding: 0.8em;
+	padding-left: 5%;
+	p {padding: 0; margin: 0;}
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+	}
+	.fa:hover {
+		text-shadow: $glow-big;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#footer {
+		text-align: center;
+		padding-left: 0.8em; 
+	}
+}
+
+/* ############################################
+	ABOUT
+############################################ */
+#about {
+	overflow: hidden;
+	img {
+		margin: 1em 0 1em 9%;
+		float: right;
+		width: 300px;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#about {
+		img {
+			margin-left: 1%;
+		}
+	}
+}
+
+/* ############################################
+	PROJECTS
+############################################ */
+#projects {
+	.box {overflow: hidden;}
+	img	{
+		float: right;
+		max-width: 60%;
+		margin: 0 0 0.8em 0.8em;
+	}
+}
+
+/* ############################################
+	EXPERIENCE
+############################################ */
+#experience {
+	line-height: 1;
+	li {margin-bottom: 0.5em;}
+}
+
+/* ############################################
+	PHILOSOPHY
+############################################ */
+#philosophy {
+	line-height: 24px;
+	img {
+		width: 100px;
+		height: 100px;
+	}
+	.box {overflow: hidden;}
+	.icon {	
+		float: right;
+		margin: 0.8em 0 0.8em 0.8em;
+	}
+	.keyword {
+		display: inline-block;
+		background-color: $highlight-color;
+		color: white;
+		font-family: $mono-font;
+		font-weight: bold;
+		padding: 0 8px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#philosophy {
+		img {
+			width: 80px;
+			height: 80px;
+		}
+	}
+}
+
+/* ############################################
+	DSTS
+############################################ */
+#dsts {
+	.box {
+		padding: 10px 1em;
+	}
+	p.center { text-align: center;}
+	img { 
+		display: inline-block;
+		max-width: 514px;
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#dsts {
+		img {max-width: 100%;}
+	}
+}
+
+/* ############################################
+	DATABASE
+############################################ */
+#database {
+	img {
+		display: inline-block;
+		max-width: 49%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#database {
+		img {
+			max-width: 100%;
+			margin: 10px 0;
+		}
+	}
+}
+
+/* ############################################
+	EDUCATION
+############################################ */
+
+#education {
+	h3 {margin-top: 0; padding-top: 0;}
+	.code {
+		padding: 0;
+		margin: 0;
+		margin-top: 1em;
+		font-family: $mono-font;
+		font-weight: normal;
+	}
+	.location {
+		text-align: right;
+		padding: 0;
+		margin: 0;
+		font-size: 0.8em;
+		font-style: italic;
+		color: $faded-color;
+	}
+}
+
+#high {
+	ul {
+		list-style-position: inside;
+		list-style-type: circle;
+		margin: 0.8em 0;
+	}
+	li {
+	}
+	.grid-item {margin: 0 1%;}
+}
+
+/* ############################################
+	CONTACT
+############################################ */
+#contact {
+	max-width: 650px;
+	margin: 2% 0;
+	.box-button { 
+		width: 90%;
+		margin: 0.5em 5%;
+		text-align: center;
+	}
+	.box-input { 
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+
+/* ############################################
+	ERROR
+############################################ */
+#error {
+	max-width: 650px;
+	margin: 2% 0;
+	.box-button { 
+		width: 90%;
+		margin: 0.5em 5%;
+		text-align: center;
+	}
+}
+
+/* ############################################
+	GRIDS
+############################################ */
+.grid-1, .grid-2, .grid-3, .grid-4 {
+	margin: -1%;
+	display: flex; 
+	display: -webkit-flex; 
+	display: -ms-flex;
+	display: -moz-flex;
+	flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap; 
+	-ms-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	.box {margin: 1%;}
+}
+.grid-item {margin: 1%;}
+.grid-1 .box, .grid-1 .grid-item {width: 98%;}
+.grid-2 .box, .grid-2 .grid-item {width: 48%;}
+.grid-3 .box, .grid-3 .grid-item {width: 31.3%;}
+.grid-4 .box, .grid-4 .grid-item {width: 23%;}
+
+@media screen and (max-width: 700px) {
+	.grid-1, .grid-2, .grid-3, .grid-4 {
+		margin: -0.5em -1%;
+		.box {
+			width: 98%;
+			margin: 0.5em 1%;
+		}
+		.grid-item {
+			width: 98%;
+			margin: 0.5em 1%;
+		}
+	}
+	.grid-item {margin: 0.5em 1%;}
+}
