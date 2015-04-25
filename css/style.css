@@ -42,7 +42,7 @@ h2 {
   font-family: Consolas, Monaco, "Lucida Console", "DejaVu Sans Mono", monospace;
   font-size: 1.5em;
   font-weight: bold;
-  margin: 2% 0; }
+  margin: 1em 0; }
 
 h3 {
   display: block;
@@ -87,7 +87,7 @@ button {
   background-color: white;
   border: 1px solid lightgray;
   padding: 0.5em 1em;
-  margin: 1% 0; }
+  margin: 0.8em 0; }
 
 .clickable {
   position: relative; }
@@ -119,15 +119,15 @@ button {
   background-color: #ffe5e5;
   border-color: red; }
 
+@media screen and (max-width: 900px) {
+  .box {
+    margin: 0.5em 0; } }
 @media screen and (max-width: 700px) {
   h2 {
     margin: 1em 0 0.5em; }
 
   .wrapper {
-    margin-bottom: 1em; }
-
-  .box {
-    margin: 0.5em 0; } }
+    margin-bottom: 1em; } }
 /* ############################################
 	HEADER
 ############################################ */
@@ -310,7 +310,7 @@ button {
 	GRIDS
 ############################################ */
 .grid-1, .grid-2, .grid-3, .grid-4 {
-  margin: -1%;
+  margin: -0.8em -1%;
   display: flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -320,10 +320,10 @@ button {
   -ms-flex-wrap: wrap;
   -moz-flex-wrap: wrap; }
   .grid-1 .box, .grid-2 .box, .grid-3 .box, .grid-4 .box {
-    margin: 1%; }
+    margin: 0.8em 1%; }
 
 .grid-item {
-  margin: 1%; }
+  margin: 0.8em 1%; }
 
 .grid-1 .box, .grid-1 .grid-item {
   width: 98%; }
@@ -337,17 +337,17 @@ button {
 .grid-4 .box, .grid-4 .grid-item {
   width: 23%; }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .grid-1, .grid-2, .grid-3, .grid-4 {
     margin: -0.5em -1%; }
     .grid-1 .box, .grid-2 .box, .grid-3 .box, .grid-4 .box {
-      width: 98%;
       margin: 0.5em 1%; }
     .grid-1 .grid-item, .grid-2 .grid-item, .grid-3 .grid-item, .grid-4 .grid-item {
-      width: 98%;
-      margin: 0.5em 1%; }
-
-  .grid-item {
-    margin: 0.5em 1%; } }
+      margin: 0.5em 1%; } }
+@media screen and (max-width: 700px) {
+  .grid-1 .box, .grid-2 .box, .grid-3 .box, .grid-4 .box {
+    width: 98%; }
+  .grid-1 .grid-item, .grid-2 .grid-item, .grid-3 .grid-item, .grid-4 .grid-item {
+    width: 98%; } }
 
 /*# sourceMappingURL=style.css.map */
