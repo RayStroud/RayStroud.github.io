@@ -314,18 +314,15 @@ button {
 ############################################ */
 .grid-1, .grid-2, .grid-3, .grid-4 {
   margin: -0.8em -1%;
-  display: -webkit-box;
-  /* old safari */
-  display: -mox-box;
-  /* old firefox */
   display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
   /* IE 10 */
   display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
   /* new chrome */
   display: flex;
-  /* new spec */
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  /* new spec */ }
   .grid-1 .box, .grid-1 .grid-item, .grid-2 .box, .grid-2 .grid-item, .grid-3 .box, .grid-3 .grid-item, .grid-4 .box, .grid-4 .grid-item {
     margin: 0.8em 1%; }
 

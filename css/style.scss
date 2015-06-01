@@ -406,18 +406,10 @@ button {display: block;}
 ############################################ */
 .grid-1, .grid-2, .grid-3, .grid-4 {
 	margin: -0.8em -1%;
-	display: -webkit-box; 	/* old safari */
-	display: -mox-box; 		/* old firefox */
-	display: -ms-flexbox;	/* IE 10 */
-	display: -webkit-flex; 	/* new chrome */
-	display: flex; 			/* new spec */
-
-	-webkit-flex-wrap: wrap; 
-	flex-wrap: wrap; 
-
-	.box, .grid-item {
-		margin: 0.8em 1%;
-	}
+	display: -ms-flexbox; -ms-flex-wrap: wrap; 		/* IE 10 */
+	display: -webkit-flex; -webkit-flex-wrap: wrap; /* new chrome */
+	display: flex; flex-wrap: wrap; 				/* new spec */
+	.box, .grid-item {margin: 0.8em 1%;}
 }
 .grid-1 .box, .grid-1 .grid-item {width: 98%;}
 .grid-2 .box, .grid-2 .grid-item {width: 48%;}
