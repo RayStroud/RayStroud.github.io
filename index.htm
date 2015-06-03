@@ -137,9 +137,10 @@
 
 			<h2>Concepts</h2>
 			<div id="concepts" class="grid-3">
-				<div class="box">
+				<div class="clickable box">
 					<h3>Responsive</h3>
-					<p>As someone who browses as much on a smartphone as a computer, I think websites need to be optimized for mobile browsing. Twitter Bootstrap is a great tool that I've used to implement a responsive grid system, and it uses a consistently clean look too.</p>
+					<p>As someone who browses as much on a smartphone as a computer, I think websites need to be optimized for mobile browsing. <a>Click here <span class="glyphicon glyphicon-new-window"></span></a> in a desktop browser to see how this page looks on a mobile device.</p>
+					<a href="#" target="popup" onClick="wopen('#', 'popup', 320, 480); return false;"><span class="link-spanner"></span></a>
 				</div>
 				<div class="box">
 					<h3>Templating</h3>
@@ -288,6 +289,18 @@
 
 		ga('create', 'UA-53296774-1', 'auto');
 		ga('send', 'pageview');
+	</script>
+	<script>
+		function wopen(url, name, w, h)
+		{
+			//Fudge factors for window decoration space.
+			w += 32;
+			h += 96;
+			var win = window.open(url, name, 'width=' + w + ', height=' + h + ', ' +
+				'location=yes, menubar=no, ' + 'status=no, toolbar=no, scrollbars=no, resizable=no');
+			win.resizeTo(w, h);
+			win.focus();
+		}
 	</script>
 </body>
 </html>
