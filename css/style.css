@@ -205,18 +205,12 @@ button {
     margin-bottom: 0.5em; }
 
 /* ############################################
-	PHILOSOPHY
+	CONCEPTS and PHILOSOPHY
 ############################################ */
 #philosophy {
   line-height: 24px; }
-  #philosophy img {
-    width: 100px;
-    height: 100px; }
   #philosophy .box {
     overflow: hidden; }
-  #philosophy .icon {
-    float: right;
-    margin: 0.8em 0 0.8em 0.8em; }
   #philosophy .keyword {
     display: inline-block;
     background-color: #36A4C4;
@@ -226,10 +220,13 @@ button {
     padding: 0 8px;
     line-height: 20px; }
 
-@media screen and (max-width: 700px) {
-  #philosophy img {
-    width: 80px;
-    height: 80px; } }
+.icon {
+  float: right;
+  margin: 0.8em 0 0.8em 0.8em; }
+
+@media screen and (max-width: 1000px) {
+  #concepts.grid-3 .box {
+    width: 48%; } }
 /* ############################################
 	DSTS
 ############################################ */
