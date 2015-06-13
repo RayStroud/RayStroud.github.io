@@ -294,10 +294,10 @@
 		function wopen(url, name, w, h)
 		{
 			//Fudge factors for window decoration space.
-			w += 32;
+			w += 62;
 			h += 96;
 			var win = window.open(url, name, 'width=' + w + ', height=' + h + ', ' +
-				'location=yes, menubar=no, ' + 'status=no, toolbar=no, scrollbars=no, resizable=no');
+				'location=yes, menubar=no, ' + 'status=no, toolbar=no, scrollbars=yes, resizable=yes');
 			win.resizeTo(w, h);
 			win.focus();
 		}
