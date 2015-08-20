@@ -207,6 +207,8 @@ button {
   line-height: 1; }
   #experience li {
     margin-bottom: 0.5em; }
+  #experience .stars {
+    margin-right: 0.5em; }
 
 /* ############################################
 	PHILOSOPHY
