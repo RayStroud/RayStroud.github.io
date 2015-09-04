@@ -5,35 +5,59 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-	<meta name="apple-mobile-web-app-title" content="Ray Stroud">
-	<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-	<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-	<meta name="msapplication-TileColor" content="#db6f00">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="application-name" content="RayStroud">
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#db6f00">
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta property="fb:admins" content="680475331" />
+	<meta property="fb:app_id" content="1809100705983082" />
 	<meta property="og:title" content="Ray Stroud" /> 
 	<meta property="og:site_name" content="Ray Stroud" />
 	<meta property="og:url" content="http://raystroud.ca" />
-	<meta property="og:description" content="web developer, back-end" />
+	<meta property="og:description" content="web developer" />
+	<meta property="og:type" content="profile" />
+	<meta property="article:author" content="https://www.facebook.com/raystroud.ca" />
+	<meta property="article:publisher" content="https://www.facebook.com/raystroud.ca" />
 	<meta property="og:image" content="http://raystroud.ca/images/raystroud.png?v5" />
 	<meta property="og:image" content="http://raystroud.ca/images/raystroud-long.png?v1" />
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1809100705983082',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 	<div id="header" class="clickable">
 		<div class="name">Ray Stroud</div>
 		<div class="description">Web Developer</div>
@@ -42,7 +66,7 @@
 	<div id="content">
 		<div class="wrapper">		
 		
-			<h2>About</h2>
+			<h2><span class="cap">A</span>bout</h2>
 			<div id="about" class="grid-1">
 				<div class="box">
 					<img alt="" src="images/profile.jpg" />
@@ -52,26 +76,26 @@
 				<div class="grid-item"> 
 					<div class="grid-4">
 						<div class="clickable box">
-							<h3><a><span class="fa fa-file-pdf-o dl-icon"></span>Resume</a></h3>
+							<h5><span class="fa fa-file-pdf-o dl-icon"></span><a>Resume</a></h5>
 							<a href="resume.pdf" target="_blank"><span class="link-spanner"></span></a>
 						</div>
 						<div class="clickable box">
-							<h3><a><span class="fa fa-file-pdf-o dl-icon"></span>Card</a></h3>
+							<h5><span class="fa fa-file-pdf-o dl-icon"></span><a>Card</a></h5>
 							<a href="card.pdf" target="_blank"><span class="link-spanner"></span></a>
 						</div>
 						<div class="clickable box">
-							<h3><a><span class="fa fa-file-text-o dl-icon"></span>vCard</a></h3>
+							<h5><span class="fa fa-file-text-o dl-icon"></span><a>vCard</a></h5>
 							<a href="vcard.vcf" target="_blank"><span class="link-spanner"></span></a>
 						</div>
 						<div class="clickable box">
-							<h3><a><span class="fa fa-envelope-o dl-icon"></span>Contact</a></h3>
+							<h5><span class="fa fa-envelope-o dl-icon"></span><a>Contact</a></h5>
 							<a href="contact.htm"><span class="link-spanner"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<h2>Projects</h2>
+			<h2><span class="cap">P</span>rojects</h2>
 			<div id="projects" class="grid-2">
 				<div class="clickable box">
 					<h3>DSTS</h3>
@@ -87,7 +111,7 @@
 				</div>
 			</div>
 
-			<h2>Experience</h2>
+			<h2><span class="cap">E</span>xperience</h2>
 			<div id="experience" class="grid-3">
 				<div class="box">
 					<h3>Languages</h3>
@@ -135,7 +159,7 @@
 				</div>
 			</div>
 
-			<h2>Concepts</h2>
+			<h2><span class="cap">C</span>oncepts</h2>
 			<div id="concepts" class="grid-3">
 				<div class="clickable box">
 					<h3>Responsive</h3>
@@ -178,7 +202,7 @@
 -->
 			</div>
 
-			<h2>Philosophy</h2>
+			<h2><span class="cap">P</span>hilosophy</h2>
 			<div id="philosophy" class="grid-2">
 				<div class="box">
 					<div class="icon">
@@ -246,7 +270,7 @@
 				</div>
 			</div>
 	<!--
-			<h2>Inspiration</h2>
+			<h2><span class="cap">I</span>nspiration</h2>
 			<div id="inspiration">
 				<div class="box">
 					<h3>Apple</h3>
