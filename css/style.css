@@ -56,8 +56,8 @@ a {
   color: #36A4C4; }
 
 a:hover {
-  border-color: #014559;
-  color: #014559; }
+  border-color: #056B88;
+  color: #056B88; }
 
 a span.fa {
   border: none; }
@@ -105,7 +105,7 @@ button {
   color: #36A4C4; }
 
 button:hover {
-  color: #014559;
+  color: #056B88;
   cursor: pointer; }
 
 #content {
@@ -130,12 +130,12 @@ button:hover {
     color: #36A4C4; }
 
 .clickable.box:hover {
-  border-color: #014559; }
+  border-color: #056B88; }
   .clickable.box:hover a {
-    color: #014559;
-    border-color: #014559; }
+    color: #056B88;
+    border-color: #056B88; }
   .clickable.box:hover .fa {
-    color: #014559; }
+    color: #056B88; }
 
 .link-spanner {
   position: absolute;
