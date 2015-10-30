@@ -473,7 +473,7 @@ button:hover {
     width: 14.67%; }
   .grid-x .grid-md-5_6.box, .grid-x .grid-md-5_6.grid-item {
     width: 81.33%; } }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .grid-1 .box, .grid-1 .grid-item, .grid-2 .box, .grid-2 .grid-item, .grid-3 .box, .grid-3 .grid-item, .grid-4 .box, .grid-4 .grid-item {
     width: 98%; }
 
@@ -507,6 +507,38 @@ button:hover {
     .grid-x .grid-sm-1_6.box, .grid-x .grid-sm-1_6.grid-item {
       width: 12.67%; }
     .grid-x .grid-sm-5_6.box, .grid-x .grid-sm-5_6.grid-item {
+      width: 79.33%; } }
+@media screen and (max-width: 400px) {
+  .grid-x {
+    margin: -0.5em -2%; }
+    .grid-x .box, .grid-x .grid-item {
+      margin: 0.5em 2%; }
+    .grid-x .grid-xs-0.box, .grid-x .grid-xs-0.grid-item {
+      display: none; }
+    .grid-x .grid-xs-1.box, .grid-x .grid-xs-1.grid-item {
+      width: 98%;
+      margin: 0.5em 1%; }
+    .grid-x .grid-xs-1_2.box, .grid-x .grid-xs-1_2.grid-item {
+      width: 46%; }
+    .grid-x .grid-xs-1_4.box, .grid-x .grid-xs-1_4.grid-item {
+      width: 21%; }
+    .grid-x .grid-xs-3_4.box, .grid-x .grid-xs-3_4.grid-item {
+      width: 71%; }
+    .grid-x .grid-xs-1_8.box, .grid-x .grid-xs-1_8.grid-item {
+      width: 8.5%; }
+    .grid-x .grid-xs-3_8.box, .grid-x .grid-xs-3_8.grid-item {
+      width: 33.5%; }
+    .grid-x .grid-xs-5_8.box, .grid-x .grid-xs-5_8.grid-item {
+      width: 58.5%; }
+    .grid-x .grid-xs-7_8.box, .grid-x .grid-xs-7_8.grid-item {
+      width: 83.5%; }
+    .grid-x .grid-xs-1_3.box, .grid-x .grid-xs-1_3.grid-item {
+      width: 29.33%; }
+    .grid-x .grid-xs-2_3.box, .grid-x .grid-xs-2_3.grid-item {
+      width: 62.67%; }
+    .grid-x .grid-xs-1_6.box, .grid-x .grid-xs-1_6.grid-item {
+      width: 12.67%; }
+    .grid-x .grid-xs-5_6.box, .grid-x .grid-xs-5_6.grid-item {
       width: 79.33%; } }
 
 /*# sourceMappingURL=style.css.map */

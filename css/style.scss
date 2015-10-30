@@ -529,7 +529,7 @@ button:hover {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 	.grid-1, .grid-2, .grid-3, .grid-4 {
 		.box, .grid-item {width: 98%;}
 	}
@@ -549,5 +549,25 @@ button:hover {
 		.grid-sm-2_3.box, .grid-sm-2_3.grid-item {width: 62.67%;}
 		.grid-sm-1_6.box, .grid-sm-1_6.grid-item {width: 12.67%;}
 		.grid-sm-5_6.box, .grid-sm-5_6.grid-item {width: 79.33%;}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid-x {
+		margin: -0.5em -2%;
+		.box, .grid-item {margin: 0.5em 2%;}
+		.grid-xs-0.box, .grid-xs-0.grid-item {display: none;}
+		.grid-xs-1.box, .grid-xs-1.grid-item {width: 98%; margin: 0.5em 1%;}
+		.grid-xs-1_2.box, .grid-xs-1_2.grid-item {width: 46%;}
+		.grid-xs-1_4.box, .grid-xs-1_4.grid-item {width: 21%;}
+		.grid-xs-3_4.box, .grid-xs-3_4.grid-item {width: 71%;}
+		.grid-xs-1_8.box, .grid-xs-1_8.grid-item {width: 8.5%;}
+		.grid-xs-3_8.box, .grid-xs-3_8.grid-item {width: 33.5%;}
+		.grid-xs-5_8.box, .grid-xs-5_8.grid-item {width: 58.5%;}
+		.grid-xs-7_8.box, .grid-xs-7_8.grid-item {width: 83.5%;}
+		.grid-xs-1_3.box, .grid-xs-1_3.grid-item {width: 29.33%;}
+		.grid-xs-2_3.box, .grid-xs-2_3.grid-item {width: 62.67%;}
+		.grid-xs-1_6.box, .grid-xs-1_6.grid-item {width: 12.67%;}
+		.grid-xs-5_6.box, .grid-xs-5_6.grid-item {width: 79.33%;}
 	}
 }
