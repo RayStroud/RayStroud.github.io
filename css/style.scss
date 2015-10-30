@@ -281,16 +281,16 @@ button:hover {
 		margin: 1em 0 1em 9%;
 		float: right;
 		width: 300px;
-		max-width: 60%;
+		max-width: 35%;
 	}
 }
 
 @media screen and (max-width: 700px) {
-	#about img {margin-left: 1em; }
+	#about img {margin-left: 1em; max-width: 60%}
 }
 
 @media screen and (max-width: 400px) {
-	#about img {width: 100%; max-width: 100%; }
+	#about img {width: 100%; max-width: 100%;}
 }
 
 /* ############################################
@@ -328,16 +328,16 @@ button:hover {
 		float: right;
 		margin: 0.8em 0 0.8em 0.8em;
 	}
-	.keyword {
-		display: inline-block;
-		background-color: $highlight-color;
-		color: white;
-		font-family: $mono-font;
-		font-size: 90%;
-		font-weight: bold;
-		padding: 0 8px;
-		line-height: 20px;
-	}
+}
+.keyword {
+	display: inline-block;
+	background-color: $highlight-color;
+	color: white;
+	font-family: $mono-font;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 2px 6px 0;
+	line-height: 18px;
 }
 
 @media screen and (max-width: 700px) {
@@ -359,14 +359,15 @@ button:hover {
 	p.center { text-align: center;}
 	img { 
 		display: inline-block;
-		max-width: 514px;
+		width: 514px;
+		max-width: 100%;
 		margin: 10px 0;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	#dsts {
-		img {max-width: 100%;}
+		img {}
 	}
 }
 
@@ -457,30 +458,76 @@ button:hover {
 /* ############################################
 	GRIDS
 ############################################ */
-.grid-1, .grid-2, .grid-3, .grid-4 {
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-x {
 	margin: -0.8em -1%;
 	display: -ms-flexbox; -ms-flex-wrap: wrap; 		/* IE 10 */
 	display: -webkit-flex; -webkit-flex-wrap: wrap; /* new chrome */
 	display: flex; flex-wrap: wrap; 				/* new spec */
+	align-content: stretch;
 	.box, .grid-item {margin: 0.8em 1%;}
 }
 .grid-1 .box, .grid-1 .grid-item {width: 98%;}
 .grid-2 .box, .grid-2 .grid-item {width: 48%;}
 .grid-3 .box, .grid-3 .grid-item {width: 31.3%;}
 .grid-4 .box, .grid-4 .grid-item {width: 23%;}
+.grid-x {
+	.grid-xl-0.box, .grid-xl-0.grid-item {display: none;}
+	.grid-xl-1.box, .grid-xl-1.grid-item {width: 98%;}
+	.grid-xl-1_2.box, .grid-xl-1_2.grid-item {width: 48%;}
+	.grid-xl-1_4.box, .grid-xl-1_4.grid-item {width: 23%;}
+	.grid-xl-3_4.box, .grid-xl-3_4.grid-item {width: 73%;}
+	.grid-xl-1_8.box, .grid-xl-1_8.grid-item {width: 10.5%;}
+	.grid-xl-3_8.box, .grid-xl-3_8.grid-item {width: 35.5%;}
+	.grid-xl-5_8.box, .grid-xl-5_8.grid-item {width: 60.5%;}
+	.grid-xl-7_8.box, .grid-xl-7_8.grid-item {width: 85.5%;}
+	.grid-xl-1_3.box, .grid-xl-1_3.grid-item {width: 31.33%;}
+	.grid-xl-2_3.box, .grid-xl-2_3.grid-item {width: 64.67%;}
+	.grid-xl-1_6.box, .grid-xl-1_6.grid-item {width: 14.67%;}
+	.grid-xl-5_6.box, .grid-xl-5_6.grid-item {width: 81.33%;}
+}
 
 @media screen and (max-width: 1100px) {
-	.grid-1, .grid-2, .grid-3, .grid-4 {
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-x {
 		margin: -0.65em -1%;
 		.box {margin: 0.65em 1%;}
 		.grid-item {margin: 0.65em 1%;}
 	}
+	.grid-x {
+		.grid-lg-0.box, .grid-lg-0.grid-item {display: none;}
+		.grid-lg-1.box, .grid-lg-1.grid-item {width: 98%;}
+		.grid-lg-1_2.box, .grid-lg-1_2.grid-item {width: 48%;}
+		.grid-lg-1_4.box, .grid-lg-1_4.grid-item {width: 23%;}
+		.grid-lg-3_4.box, .grid-lg-3_4.grid-item {width: 73%;}
+		.grid-lg-1_8.box, .grid-lg-1_8.grid-item {width: 10.5%;}
+		.grid-lg-3_8.box, .grid-lg-3_8.grid-item {width: 35.5%;}
+		.grid-lg-5_8.box, .grid-lg-5_8.grid-item {width: 60.5%;}
+		.grid-lg-7_8.box, .grid-lg-7_8.grid-item {width: 85.5%;}
+		.grid-lg-1_3.box, .grid-lg-1_3.grid-item {width: 31.33%;}
+		.grid-lg-2_3.box, .grid-lg-2_3.grid-item {width: 64.67%;}
+		.grid-lg-1_6.box, .grid-lg-1_6.grid-item {width: 14.67%;}
+		.grid-lg-5_6.box, .grid-lg-5_6.grid-item {width: 81.33%;}
+	}
 }
 @media screen and (max-width: 900px) {
-	.grid-1, .grid-2, .grid-3, .grid-4 {
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-x {
 		margin: -0.5em -1%;
 		.box {margin: 0.5em 1%;}
 		.grid-item {margin: 0.5em 1%;}
+	}
+	.grid-x {
+		.grid-md-0.box, .grid-md-0.grid-item {display: none;}
+		.grid-md-1.box, .grid-md-1.grid-item {width: 98%;}
+		.grid-md-1_2.box, .grid-md-1_2.grid-item {width: 48%;}
+		.grid-md-1_4.box, .grid-md-1_4.grid-item {width: 23%;}
+		.grid-md-3_4.box, .grid-md-3_4.grid-item {width: 73%;}
+		.grid-md-1_8.box, .grid-md-1_8.grid-item {width: 10.5%;}
+		.grid-md-3_8.box, .grid-md-3_8.grid-item {width: 35.5%;}
+		.grid-md-5_8.box, .grid-md-5_8.grid-item {width: 60.5%;}
+		.grid-md-7_8.box, .grid-md-7_8.grid-item {width: 85.5%;}
+		.grid-md-1_3.box, .grid-md-1_3.grid-item {width: 31.33%;}
+		.grid-md-2_3.box, .grid-md-2_3.grid-item {width: 64.67%;}
+		.grid-md-1_6.box, .grid-md-1_6.grid-item {width: 14.67%;}
+		.grid-md-5_6.box, .grid-md-5_6.grid-item {width: 81.33%;}
 	}
 }
 
@@ -488,5 +535,21 @@ button:hover {
 	.grid-1, .grid-2, .grid-3, .grid-4 {
 		.box {width: 98%;}
 		.grid-item {width: 98%;}
+	}
+	.grid-x {
+		margin: -0.5em -2%;
+		.grid-sm-0.box, .grid-sm-0.grid-item {display: none;}
+		.grid-sm-1.box, .grid-sm-1.grid-item {width: 96%; margin: 0.5em 2%;}
+		.grid-sm-1_2.box, .grid-sm-1_2.grid-item {width: 46%; margin: 0.5em 2%;}
+		.grid-sm-1_4.box, .grid-sm-1_4.grid-item {width: 21%; margin: 0.5em 2%;}
+		.grid-sm-3_4.box, .grid-sm-3_4.grid-item {width: 71%; margin: 0.5em 2%;}
+		.grid-sm-1_8.box, .grid-sm-1_8.grid-item {width: 8.5%; margin: 0.5em 2%;}
+		.grid-sm-3_8.box, .grid-sm-3_8.grid-item {width: 33.5%; margin: 0.5em 2%;}
+		.grid-sm-5_8.box, .grid-sm-5_8.grid-item {width: 58.5%; margin: 0.5em 2%;}
+		.grid-sm-7_8.box, .grid-sm-7_8.grid-item {width: 83.5%; margin: 0.5em 2%;}
+		.grid-sm-1_3.box, .grid-sm-1_3.grid-item {width: 29.33%; margin: 0.5em 2%;}
+		.grid-sm-2_3.box, .grid-sm-2_3.grid-item {width: 62.67%; margin: 0.5em 2%;}
+		.grid-sm-1_6.box, .grid-sm-1_6.grid-item {width: 12.67%; margin: 0.5em 2%;}
+		.grid-sm-5_6.box, .grid-sm-5_6.grid-item {width: 79.33%; margin: 0.5em 2%;}
 	}
 }
