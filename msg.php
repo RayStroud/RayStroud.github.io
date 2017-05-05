@@ -67,7 +67,7 @@
 		//make email message
 		if($bSendMail)
 		{
-			$mailTo 		= 'ray.stroud@gmail.com';
+			$mailTo 		= 'ray.stroud+ca@gmail.com';
 			$mailSubject 	= 'RayStroud.ca Contact:' . $name;
 			
 			$mailMessage  = "Name: $name \r\n";
