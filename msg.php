@@ -88,11 +88,11 @@
 
 		if(isset($bSuccess))
 		{
-			header('Location: msgsent.htm');
+			header('Location: msgsent.html');
 		}
 		else
 		{
-			header('Location: msgerror.htm');			
+			header('Location: msgerror.html');			
 		}
 	}
 ?>

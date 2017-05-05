@@ -49,40 +49,31 @@
 		<a href="."><span class="link-spanner"></span></a>
 	</div>
 	<div id="content">
-		<div class="wrapper">
-			<div id="contact">
+		<div id="contact">
 				<h2><span class="cap">L</span>eave a <span class="cap">M</span>essage</h2>
-				<form name="contact" action="msg.php" onsubmit="return validate();" method="post">
-					<h4>Name</h4>
-					<input type="text" name="name" class="box box-input" placeholder="Your name" />
+			<div class="error box">
+				<p>There was an error processing your message. Please try again, or contact me through social media instead.</p>
+			</div>
 
-					<h4>Email</h4>
-					<input type="email" name="email" class="box box-input" placeholder="Your email" />
-					
-					<h4>Message</h4>
-					<textarea name="message" rows="5" class="box box-input" placeholder="Your message"></textarea>
+			<div class="clickable box box-button"><span class="fa fa-envelope-o dl-icon"></span><a href="contact.html">Try Again<span class="link-spanner"></span></a></div>
 
-					<button type="submit" name="sendMessage" class="clickable box box-button"><span class="fa fa-envelope-o dl-icon"></span>Submit Message</button>
-				</form>
-
-				<h2><span class="cap">S</span>ocial <span class="cap">M</span>edia</h2>
-				<div class="grid-x">
-					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
-						<h5><span class="fa fa-envelope dl-icon"></span><a>Email</a></h5>
-						<a href="mailto:raystroud+ca@gmail.com" target="_blank"><span class="link-spanner"></span></a>
-					</div>
-					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
-						<h5><span class="fa fa-linkedin-square dl-icon"></span><a>LinkedIn</a></h5>
-						<a href="http://linkedin.com/in/raystroud" target="_blank"><span class="link-spanner"></span></a>
-					</div>
-					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
-						<h5><span class="fa fa-facebook-square dl-icon"></span><a>Facebook</a></h5>
-						<a href="http://fb.me/raystroud.ca" target="_blank"><span class="link-spanner"></span></a>
-					</div>
-					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
-						<h5><span class="fa fa-github-square dl-icon"></span><a>Github</a></h5>
-						<a href="http://github.com/raystroud" target="_blank"><span class="link-spanner"></span></a>
-					</div>
+			<h2><span class="cap">S</span>ocial <span class="cap">M</span>edia</h2>
+			<div class="grid-x">
+				<div class="clickable box grid-xl-1_4 grid-sm-1_2">
+					<h5><span class="fa fa-envelope dl-icon"></span><a>Email</a></h5>
+					<a href="mailto:raystroud+ca@gmail.com" target="_blank"><span class="link-spanner"></span></a>
+				</div>
+				<div class="clickable box grid-xl-1_4 grid-sm-1_2">
+					<h5><span class="fa fa-linkedin-square dl-icon"></span><a>LinkedIn</a></h5>
+					<a href="http://linkedin.com/in/raystroud" target="_blank"><span class="link-spanner"></span></a>
+				</div>
+				<div class="clickable box grid-xl-1_4 grid-sm-1_2">
+					<h5><span class="fa fa-facebook-square dl-icon"></span><a>Facebook</a></h5>
+					<a href="http://fb.me/raystroud.ca" target="_blank"><span class="link-spanner"></span></a>
+				</div>
+				<div class="clickable box grid-xl-1_4 grid-sm-1_2">
+					<h5><span class="fa fa-github-square dl-icon"></span><a>Github</a></h5>
+					<a href="http://github.com/raystroud" target="_blank"><span class="link-spanner"></span></a>
 				</div>
 			</div>
 		</div>
@@ -91,7 +82,7 @@
 		<a href=".">
 			<span class="fa fa-fw fa-2x fa-home"></span>
 		</a>
-		<a href="contact.htm">
+		<a href="contact.html">
 			<span class="fa fa-fw fa-2x fa-envelope"></span>
 		</a>
 		<a href="http://linkedin.com/in/raystroud" target="_blank">
@@ -104,36 +95,5 @@
 			<span class="fa fa-fw fa-2x fa-github-square"></span>
 		</a>
 	</div>
-	<script>
-		function validate() {
-			var name = document.forms["contact"]["name"].value;
-			var email = document.forms["contact"]["email"].value;
-			var message = document.forms["contact"]["message"].value;
-
-			var bConfirm = false;
-			var confirmMessage = "";
-			if (!name)
-			{
-				bConfirm = true;
-				confirmMessage += "Without a name, I may not know who you are.\n";
-			}
-			if (!email)
-			{
-				bConfirm = true;
-				confirmMessage += "Without an email, I may not be able to respond.\n";
-			}
-			if (!message)
-			{
-				bConfirm = true;
-				confirmMessage += "Without a message, I may not know why you contacted me.\n";
-			}
-
-			if(bConfirm)
-			{
-				var bSend = confirm(confirmMessage + "Send message anyway?");
-				if(bSend) {return true;} else {return false;}
-			}
-		}
-	</script>
 </body>
 </html>
