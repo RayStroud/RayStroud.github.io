@@ -210,25 +210,25 @@ button:hover {
 /* ############################################
 	ABOUT
 ############################################ */
-#about {
+#about-content {
   overflow: hidden; }
-  #about img {
+  #about-content img {
     margin: 1em 0 1em 9%;
     float: right;
     width: 300px;
     max-width: 40%; }
 
 @media screen and (max-width: 600px) {
-  #about img {
+  #about-content img {
     margin-left: 1em; } }
 /* ############################################
 	PROJECTS
 ############################################ */
-#projects {
+#projects-content {
   line-height: 24px; }
-  #projects .box {
+  #projects-content .box {
     overflow: hidden; }
-  #projects img {
+  #projects-content img {
     float: right;
     max-width: 60%;
     margin: 0 0 0.8em 0.8em; }
@@ -236,24 +236,24 @@ button:hover {
 /* ############################################
 	EXPERIENCE
 ############################################ */
-#experience {
+#experience-content {
   line-height: 1; }
-  #experience li {
+  #experience-content li {
     margin-bottom: 0.5em; }
-  #experience .stars {
+  #experience-content .stars {
     margin-right: 0.5em; }
 
 /* ############################################
 	PHILOSOPHY
 ############################################ */
-#philosophy {
+#philosophy-content {
   line-height: 24px; }
-  #philosophy img {
+  #philosophy-content img {
     width: 100px;
     height: 100px; }
-  #philosophy .box {
+  #philosophy-content .box {
     overflow: hidden; }
-  #philosophy .icon {
+  #philosophy-content .icon {
     float: right;
     margin: 0.8em 0 0.8em 0.8em; }
 
@@ -268,7 +268,7 @@ button:hover {
   line-height: 18px; }
 
 @media screen and (max-width: 600px) {
-  #philosophy img {
+  #philosophy-content img {
     width: 80px;
     height: 80px; } }
 /* ############################################

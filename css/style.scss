@@ -275,7 +275,7 @@ button:hover {
 /* ############################################
 	ABOUT
 ############################################ */
-#about {
+#about-content {
 	overflow: hidden;
 	img {
 		margin: 1em 0 1em 9%;
@@ -286,13 +286,13 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-	#about img {margin-left: 1em;}
+	#about-content img {margin-left: 1em;}
 }
 
 /* ############################################
 	PROJECTS
 ############################################ */
-#projects {
+#projects-content {
 	line-height: 24px;
 	.box {overflow: hidden;}
 	img	{
@@ -305,7 +305,7 @@ button:hover {
 /* ############################################
 	EXPERIENCE
 ############################################ */
-#experience {
+#experience-content {
 	line-height: 1;
 	li {margin-bottom: 0.5em;}
 	.stars {margin-right: 0.5em;}
@@ -314,7 +314,7 @@ button:hover {
 /* ############################################
 	PHILOSOPHY
 ############################################ */
-#philosophy {
+#philosophy-content {
 	line-height: 24px;
 	img {
 		width: 100px;
@@ -338,7 +338,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-	#philosophy {
+	#philosophy-content {
 		img {
 			width: 80px;
 			height: 80px;
