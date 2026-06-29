@@ -32,10 +32,10 @@
 
 	<meta property="fb:admins" content="680475331" />
 	<meta property="fb:app_id" content="1809100705983082" />
-	<meta property="og:title" content="Ray Stroud" /> 
+	<meta property="og:title" content="Ray Stroud" />
 	<meta property="og:site_name" content="Ray Stroud" />
 	<meta property="og:url" content="http://raystroud.ca" />
-	<meta property="og:description" content="web developer" />
+	<meta property="og:description" content="full-stack developer" />
 	<meta property="og:type" content="profile" />
 	<meta property="article:author" content="https://www.facebook.com/raystroud.ca" />
 	<meta property="article:publisher" content="https://www.facebook.com/raystroud.ca" />
@@ -45,26 +45,12 @@
 <body>
 	<div id="header" class="clickable">
 		<div class="name">Ray Stroud</div>
-		<div class="description">Web Developer</div>
+		<div class="description">Full-Stack Developer</div>
 		<a href="."><span class="link-spanner"></span></a>
 	</div>
 	<div id="content">
 		<div class="wrapper">
 			<div id="contact">
-				<h2><span class="cap">L</span>eave a <span class="cap">M</span>essage</h2>
-				<form name="contact" action="msg.php" onsubmit="return validate();" method="post">
-					<h4>Name</h4>
-					<input type="text" name="name" class="box box-input" placeholder="Your name" />
-
-					<h4>Email</h4>
-					<input type="email" name="email" class="box box-input" placeholder="Your email" />
-					
-					<h4>Message</h4>
-					<textarea name="message" rows="5" class="box box-input" placeholder="Your message"></textarea>
-
-					<button type="submit" name="sendMessage" class="clickable box box-button"><span class="fa fa-envelope-o dl-icon"></span>Submit Message</button>
-				</form>
-
 				<h2 id="social"><span class="cap">S</span>ocial <span class="cap">M</span>edia</h2>
 				<div class="grid-x">
 					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
@@ -77,11 +63,11 @@
 					</div>
 					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
 						<h5><span class="fa fa-facebook-square dl-icon"></span><a>Facebook</a></h5>
-						<a href="http://fb.me/raystroud.ca" target="_blank"><span class="link-spanner"></span></a>
+						<a href="https://fb.me/raystroud.ca" target="_blank"><span class="link-spanner"></span></a>
 					</div>
 					<div class="clickable box grid-xl-1_4 grid-sm-1_2">
 						<h5><span class="fa fa-github-square dl-icon"></span><a>Github</a></h5>
-						<a href="http://github.com/raystroud" target="_blank"><span class="link-spanner"></span></a>
+						<a href="https://github.com/raystroud" target="_blank"><span class="link-spanner"></span></a>
 					</div>
 				</div>
 			</div>
@@ -97,43 +83,14 @@
 		<a href="http://linkedin.com/in/raystroud" target="_blank">
 			<span class="fa fa-fw fa-2x fa-linkedin-square"></span>
 		</a>
-		<a href="http://fb.me/raystroud.ca" target="_blank">
+		<a href="https://fb.me/raystroud.ca" target="_blank">
 			<span class="fa fa-fw fa-2x fa-facebook-square"></span>
 		</a>
-		<a href="http://github.com/raystroud" target="_blank">
+		<a href="https://github.com/raystroud" target="_blank">
 			<span class="fa fa-fw fa-2x fa-github-square"></span>
 		</a>
 	</div>
-	<script>
-		function validate() {
-			var name = document.forms["contact"]["name"].value;
-			var email = document.forms["contact"]["email"].value;
-			var message = document.forms["contact"]["message"].value;
-
-			var bConfirm = false;
-			var confirmMessage = "";
-			if (!name)
-			{
-				bConfirm = true;
-				confirmMessage += "Without a name, I may not know who you are.\n";
-			}
-			if (!email)
-			{
-				bConfirm = true;
-				confirmMessage += "Without an email, I may not be able to respond.\n";
-			}
-			if (!message)
-			{
-				bConfirm = true;
-				confirmMessage += "Without a message, I may not know why you contacted me.\n";
-			}
-
-			if(bConfirm)
-			{
-				var bSend = confirm(confirmMessage + "Send message anyway?");
-				if(bSend) {return true;} else {return false;}
-			}
-		}
-	</script>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"be36e561e1b04a508042e51f6d51cdb2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
