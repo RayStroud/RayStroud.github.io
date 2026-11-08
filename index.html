@@ -25,19 +25,22 @@
 	<meta name="application-name" content="Ray Stroud"/>
 	<meta name="msapplication-TileColor" content="#DB6F00"/>
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="msapplication-square70x70logo" content="tiny.png"/>
-	<meta name="msapplication-square150x150logo" content="square.png"/>
-	<meta name="msapplication-wide310x150logo" content="wide.png"/>
-	<meta name="msapplication-square310x310logo" content="large.png"/>
+	<meta name="msapplication-square70x70logo" content="/mstile-70x70.png"/>
+	<meta name="msapplication-square150x150logo" content="/mstile-150x150.png"/>
+	<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png"/>
+	<meta name="msapplication-square310x310logo" content="/mstile-310x310.png"/>
+	<meta name="msapplication-config" content="/browserconfig.xml"/>
 
-	<meta property="fb:admins" content="680475331" />
-	<meta property="fb:app_id" content="1809100705983082" />
 	<meta property="og:title" content="Ray Stroud" />
 	<meta property="og:site_name" content="Ray Stroud" />
-	<meta property="og:url" content="http://raystroud.ca" />
+	<meta property="og:url" content="https://raystroud.ca/" />
 	<meta property="og:description" content="full-stack developer" />
 	<meta property="og:type" content="profile" />
-	<meta property="og:image" content="http://raystroud.ca/images/raystroud-long.png?v2" />
+	<meta property="og:image" content="https://raystroud.ca/images/raystroud-long.png?v2" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Ray Stroud, Full-Stack Developer" />
+	<meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 <script>
@@ -68,260 +71,51 @@
 			<!-- <h2 id="about"><span class="cap">A</span>bout</h2> -->
 			<div id="about-content" class="grid-x">
 				<div class="box grid-xl-7_8 grid-lg-5_6 grid-md-1">
-					<img alt="" src="images/RayStroud_profile.jpg" />
+					<img alt="Ray Stroud" src="images/RayStroud_profile.jpg" srcset="images/RayStroud_profile-300.jpg 300w, images/RayStroud_profile.jpg 512w" sizes="(max-width: 750px) 40vw, 300px" width="512" height="512" decoding="async" fetchpriority="high" />
 					<p>Hi! I'm Ray, a full-stack developer living in western Canada. Math, science, and technology have always been my passions, so it's no surprise that I found my calling in programming. I love coding because it bridges logic and creativity to help people solve complex problems.</p>
 					<p>Since graduating from Northern Alberta Institute of Technology (NAIT), I have spent the last 8 years building web applications using React TS micro-frontends and AWS CDK serverless backends.</p>
 					<p>Besides coding, my passions involve exploring the outdoors: camping, hiking, boarding, biking, etc. Whether I'm riding my fold-up bike around the city, or riding my snowboard down the mountain, I'm outside as much as possible. In the down time, I play board games with friends or explore virtual worlds in games like Legend of Zelda.</p>
-					<p>Feel free to send me an <a href="mailto:raystroud+ca@gmail.com" target="_blank">email</a>, connect on <a href="contact.html#social">social platforms</a>, or browse my <a href="http://github.com/raystroud" target="_blank">online code repositories</a>.</p>
+					<p>Feel free to send me an <a href="mailto:raystroud+ca@gmail.com" target="_blank">email</a>, connect on <a href="connect.html#connect">social platforms</a>, or browse my <a href="http://github.com/raystroud" target="_blank">online code repositories</a>.</p>
 				</div>
 				<div class="grid-item grid-xl-1_8 grid-lg-1_6 grid-md-1">
 					<div class="grid-x">
 						<div class="clickable box grid-xl-1 grid-md-1_4 grid-sm-1_2">
-							<h5><span class="fa fa-envelope-o dl-icon"></span><a>Contact</a></h5>
-							<a href="contact.html"><span class="link-spanner"></span></a>
+							<h5><span class="fa-solid fa-share-nodes dl-icon"></span><a>Connect</a></h5>
+							<a href="connect.html"><span class="link-spanner"></span></a>
 						</div>
 						<!-- <div class="clickable box grid-xl-1 grid-md-1_4 grid-sm-1_2">
-							<h5><span class="fa fa-file-pdf-o dl-icon"></span><a>Resume</a></h5>
+							<h5><span class="fa-regular fa-file-lines dl-icon"></span><a>Resume</a></h5>
 							<a href="RayStroud_resume.pdf" target="_blank"><span class="link-spanner"></span></a>
 						</div> -->
 						<div class="clickable box grid-xl-1 grid-md-1_4 grid-sm-1_2">
-							<h5><span class="fa fa-file-pdf-o dl-icon"></span><a>Card</a></h5>
+							<h5><span class="fa-solid fa-address-card dl-icon"></span><a>Card</a></h5>
 							<a href="RayStroud_card.pdf" target="_blank"><span class="link-spanner"></span></a>
 						</div>
 						<div class="clickable box grid-xl-1 grid-md-1_4 grid-sm-1_2">
-							<h5><span class="fa fa-file-text-o dl-icon"></span><a>vCard</a></h5>
+							<h5><span class="fa-solid fa-download dl-icon"></span><a>vCard</a></h5>
 							<a href="RayStroud_vcard.vcf"><span class="link-spanner"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- <h2 id="projects"><span class="cap">P</span>rojects</h2>
-			<div id="projects-content" class="grid-2">
-				<div class="clickable box">
-					<h3>Shift Tips</h3>
-					<img alt="" src="images/thumbs/shifttips.png" />
-					<p>Shift Tips is a single page app made using an <span class="keyword">Angular</span> front-end and a <span class="keyword">PHP</span> back-end. It allows restaurant servers to track information about their shifts. <a>Visit the demo <span class="fa fa-external-link"></span></a> and use username "demo" and email "demo@email.com" to login.</p>
-					<p>
-						<span class="keyword">JavaScript</span>
-						<span class="keyword">MySQL</span>
-						<span class="keyword">Github</span>
-					</p>
-					<a href="http://raystroud.ca/shifttips/" target="_blank"><span class="link-spanner"></span></a>
-				</div>
-				<div class="clickable box">
-					<h3>DSTS</h3>
-					<img alt="" src="images/thumbs/dsts.png" />
-					<p>This group project was developed for the DMIT office at NAIT. It's built using <span class="keyword">C#</span>, <span class="keyword">ASP.NET</span>, and <span class="keyword">JavaScript</span>. It imports files with student data to keep track of all the necessary requirements for graduation. <a>Read more about the project <span class="fa fa-external-link"></span></a>.</p>
-					<p>
-						<span class="keyword">Visual Studio</span>
-						<span class="keyword">MS SQL Server</span>
-						<span class="keyword">Github</span>
-					</p>
-					<a href="dsts.html"><span class="link-spanner"></span></a>
-				</div>
-				<div class="clickable box">
-					<h3>PHPokedex</h3>
-					<img alt="" src="images/thumbs/phpokedex.png" />
-					<p>This is an early catalog project built using <span class="keyword">PHP</span> and <span class="keyword">MySQL</span>. I used Twitter <span class="keyword">Bootstrap</span> to make it mobile-friendly. <a>Visit the demo to read more <span class="fa fa-external-link"></span></a>. Be sure to visit the admin section: the username is Ray and the password is Stroud.</p>
-					<p>
-						<span class="keyword">Responsive</span>
-						<span class="keyword">JavaScript</span>
-						<span class="keyword">jQuery</span>
-					</p>
-					<a href="http://162.157.46.177:7290/phpokedex/" target="_blank"><span class="link-spanner"></span></a>
-				</div>
-				<div class="clickable box">
-					<h3>Guides</h3>
-					<img alt="" src="images/thumbs/guides.png" />
-					<p>Mostly unrelated to computer programming, I've recently applied my love for <span class="keyword">organization</span> and <span class="keyword">teaching</span> to writing guides for my favourite video <span class="keyword">games</span>. I've submitted a couple to GameFAQs, and I also store them on my website.</p>
-					<p>
-						<span class="keyword">Games</span>
-						<span class="keyword">HTML</span>
-					</p>
-					<a href="http://raystroud.ca/guides/" target="_blank"><span class="link-spanner"></span></a>
-				</div>
-			</div>
-
-			<h2 id="experience"><span class="cap">E</span>xperience</h2>
-			<div id="experience-content" class="grid-3">
-				<div class="box">
-					<h3>Languages</h3>
-					<ul>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>C</li>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>C++</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>C#</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>CSS</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>HTML, XML</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>Java</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>JavaScript, JSON, AJAX</li>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Objective-C</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>PHP</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>SQL: MySQL, PL/SQL, T-SQL</li>
-					</ul>
-				</div>
-				<div class="box">
-					<h3>Development Tools</h3>
-					<ul>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span></span>Android SDK</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>Eclipse</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span></span>Github</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span></span>Oracle Database and Forms</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>MS SQL Server</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>phpMyAdmin</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>Sublime Text</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Unity</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>Visual Studio</li>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Xcode</li>
-					</ul>
-				</div>
-				<div class="box">
-					<h3>Frameworks</h3>
-					<ul>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>Angular.js</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></span>ASP.NET</li>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Drupal</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Handlebars / Mustache</li>
-						<li><span class="stars"><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Jasmine.js</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>Less.js</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></span>libGDX</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>Sass/SCSS</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span><span class="fa fa-star-o"></span></span>Twitter Bootstrap</li>
-						<li><span class="stars"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span></span>XNA</li>
-					</ul>
-				</div>
-			</div>
-
-			<h2 id="concepts"><span class="cap">C</span>oncepts</h2>
-			<div id="concepts-content" class="grid-3">
-				<div class="clickable box">
-					<h3>Responsive</h3>
-					<p>As someone who browses as much on a smartphone as a computer, I think websites need to be optimized for mobile browsing. <a>Click here <span class="fa fa-external-link"></span></a> in a desktop browser to see how this page looks on a mobile device.</p>
-					<a href="#" target="popup" onClick="wopen('#', 'popup', 320, 480); return false;"><span class="link-spanner"></span></a>
-				</div>
-				<div class="box">
-					<h3>Templating</h3>
-					<p>Separating layout, style, and content just makes sense. With Android, I've followed the built-in method of using XML. For the web, I've used ASP.NET's built in tools, as well as Handlebars, an extension of Mustache.</p>
-				</div>
-				<div class="box">
-					<h3>Games</h3>
-					<p>Playing games is great for relaxing, when there's a moment to spare. I've worked with XNA, Unity, and libGDX to build mini-games. The "create, update, draw" cycle is very familiar.</p>
-				</div>
-				<div class="box">
-					<h3>Teaching</h3>
-					<p>I like to teach people about technology, either by helping with their smartphones, or by collaborating on a new programming idea. In the past, I've done mini-tutorials to teach a task or concept.</p>
-				</div>
-				<div class="box">
-					<h3>Leadership</h3>
-					<p>Helping people to stay organized and on track comes naturally to me. In fact, for my final group project at NAIT, I took on the responsibility of project leader to organize the group's tasks.</p>
-				</div>
-				<div class="box">
-					<h3>Problem Solving</h3>
-					<p>All that is needed to overcome most problems is a search engine, some time, and/or a little imagination. I thrive on finding simple and unique solutions to problems.</p>
-				</div>
-			</div>
-
-			<h2 id="philosophy"><span class="cap">P</span>hilosophy</h2>
-			<div id="philosophy-content" class="grid-2">
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/lightbulb.png" />
-					</div>
-					<p>
-						I believe in <span class="keyword">innovation</span>, which doesn't just mean to use new <span class="keyword">technology</span>. It also means to use old technology, <span class="keyword">reimagine</span> it, and apply it to new situations, concepts, and <span class="keyword">ideas</span>.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/mobile.png" />
-					</div>
-					<p>
-						We live in a <span class="keyword">mobile</span> world. It is no longer just a <span class="keyword">convenience</span> to access data from anywhere. Using <span class="keyword">responsive</span> design and <span class="keyword">flexible</span> data structures allows access on all devices.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/lips.png" />
-					</div>
-					<p>
-						<span class="keyword">KISS</span> - Keep it <span class="keyword">simple</span>, <em>silly</em>. That philosophy applies to both design and coding. Well-commented, <span class="keyword">clean</span> code is easier to write, debug, and maintain. It's all about finding the right <span class="keyword">balance</span>.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/leaf.png" />
-					</div>
-					<p>
-						My goal in life is to make the world <span class="keyword">paperless</span>. It's one reason that I like programming! Being green or <span class="keyword">eco-friendly</span> is just being less wasteful, which saves both <span class="keyword">time</span> and precious <span class="keyword">resources</span>.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/folder.png" />
-					</div>
-					<p>
-						I think <span class="keyword">organization</span> is very important, both in the physical world and the digital world. What good is <span class="keyword">knowledge</span> or <span class="keyword">data</span> if it can't be accessed properly? Keeping it organized makes it <span class="keyword">useful</span>.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/group.png" />
-					</div>
-					<p>
-						"Two heads are better than one". When <span class="keyword">people</span> work together, they make more <span class="keyword">connections</span> than a single person could alone. I think that good <span class="keyword">teamwork</span> is key to <span class="keyword">success</span>.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/watch.png" />
-					</div>
-					<p>
-						Why do things manually or one at a time? Let technology do it more <span class="keyword">efficiently</span>, like doing several tasks <span class="keyword">simultaneously</span>, or running <span class="keyword">automatically</span> behind the scenes.
-					</p>
-				</div>
-				<div class="box">
-					<div class="icon">
-						<img alt="" src="images/smile.png" />
-					</div>
-					<p>
-						Life should be <span class="keyword">fun</span>. When I run into problems, I try to <span class="keyword">spice it up</span>, like turning them into <span class="keyword">games</span>. It's easier to do something if you make it enjoyable.
-					</p>
-				</div>
-			</div> -->
-	<!--
-			<h2><span class="cap">I</span>nspiration</h2>
-			<div id="inspiration">
-				<div class="box">
-					<h3>Apple</h3>
-					<p>design, simple, clean, unified</p>
-				</div>
-				<div class="box">
-					<h3>Nintendo</h3>
-					<p>innovation, family, learning, fun</p>
-				</div>
-				<div class="box">
-					<h3>Facebook</h3>
-					<p>people, connection, mobile, free</p>
-				</div>
-			</div>
-	-->
 		</div>
 	</div>
 	<div id="footer">
 		<a href=".">
-			<span class="fa fa-fw fa-2x fa-home"></span>
+			<span class="fa-solid fa-fw fa-2x fa-house"></span>
 		</a>
-		<a href="contact.html">
-			<span class="fa fa-fw fa-2x fa-envelope"></span>
+		<a href="mailto:raystroud+ca@gmail.com">
+			<span class="fa-solid fa-fw fa-2x fa-envelope"></span>
 		</a>
 		<a href="http://linkedin.com/in/raystroud" target="_blank">
-			<span class="fa fa-fw fa-2x fa-linkedin-square"></span>
+			<span class="fa-brands fa-fw fa-2x fa-linkedin"></span>
 		</a>
 		<a href="http://fb.me/raystroud.ca" target="_blank">
-			<span class="fa fa-fw fa-2x fa-facebook-square"></span>
+			<span class="fa-brands fa-fw fa-2x fa-facebook"></span>
 		</a>
 		<a href="http://github.com/raystroud" target="_blank">
-			<span class="fa fa-fw fa-2x fa-github-square"></span>
+			<span class="fa-brands fa-fw fa-2x fa-github"></span>
 		</a>
 	</div>
 	<script>
